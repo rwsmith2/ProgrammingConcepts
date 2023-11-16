@@ -3,7 +3,8 @@
 
     public static void BubbleSort() 
     {
-        Console.WriteLine("Bubble Sort");
+        Console.WriteLine("Bubble Sort:");
+        Console.WriteLine("AVG: O(n^2)   Worst: n-1   Best: O(n)");
         int[] array  = randomArray(10);
         printArray(array);
         Console.WriteLine("Start Sortting");
@@ -18,10 +19,9 @@
             //take the j element and compare it with the element above
             for (int j = 0; j < array.Length - 1; j++)
             {
-                Console.WriteLine("Comparing: " + array[j] + " with " + array[j+1]);
                 //if the element is greater than the right element then swap it 
                 if (array[j] > array[j + 1])
-                { 
+                {
                     //swap the two elements in the array
                     temp = array[j];
                     array[j] = array[j + 1];
